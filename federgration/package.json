@@ -1,0 +1,22 @@
+{
+  "name": "module-federation-with-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frame",
+      "header"
+    ]
+  },
+  "scripts": {
+    "start": "concurrently \"cd frame; yarn start\" \"cd header; yarn start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
