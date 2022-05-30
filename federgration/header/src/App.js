@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import Header from './Header';
+import React, { useState } from "react";
+import Header from "./Header";
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -7,8 +7,10 @@ function App() {
   return (
     <main>
       <Header />
-      <h1>Remote 1's counter: {counter}</h1>
-      <button onClick={() => setCounter(counter => counter + 1)}>increment</button>
+      <h1>Resmote 1's counter: {counter}</h1>
+      <button onClick={() => setCounter((counter) => counter + 1)}>
+        increment
+      </button>
     </main>
   );
 }
